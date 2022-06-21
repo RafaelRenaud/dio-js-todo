@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-Do App - DIO</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+    <div id="app">
+        <div id="input-container">
+            <h1>To-Do App</h1>
+            <h3>Adicione lembretes e tarefas rapidamente.</h3>
+            <p class="p-container">
+                <input type="text" placeholder="Digite alguma task simples..." id="task-input">
+                <button onclick="getTaskContent()">Adicionar</button>
+                <button onclick="clearCache()">Apagar Memória</button>
+            </p>
+        </div>
+        <div class="notebook-container">
+            <div id="notebook-header">
+                <ul>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                </ul>
+                <b>Lista To-Do</b>
+                <hr>
+            </div>
+            <div id="notebook-body">
+                <ul id="notebook-tasks">
+                </ul>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="assets/js/script.js"></script>
+</html>
